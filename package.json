@@ -1,20 +1,31 @@
 {
-  "name": "charleche",
+  "name": "bodoque",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:api": "node --watch server/index.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server/index.js",
+    "icons": "node scripts/make-icons.mjs",
+    "vapid": "node scripts/gen-vapid.mjs"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.4",
+    "@fontsource/montserrat": "^5.3.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "framer-motion": "^13.4.6",
+    "idb-keyval": "^6.3.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "web-push": "^3.6.7"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
+    "sharp": "^0.35.5",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "Bodoque · app de Tatty para cuidar a Anahi Charlotte Ortiz Llorente"
 }
